@@ -26,7 +26,7 @@ const AuthForm = props => {
           <input className='input' name="password" type="password" placeholder='Password' />
         </div>
         <div>
-          <Link to="/home" className='login-button'>{displayName}</Link>
+          <button type="submit" className='login-button'>{displayName}</button>
         </div>
         {error && error.response && <div> {error.response.data} </div>}
         <div className='signup-now'>
